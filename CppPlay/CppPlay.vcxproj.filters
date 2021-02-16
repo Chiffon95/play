@@ -30,12 +30,30 @@
     <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\card_shape.cpp">
       <Filter>소스 파일\black_jack_game</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\game_main.cpp">
+      <Filter>소스 파일\black_jack_game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\mini_game.cpp">
+      <Filter>소스 파일\black_jack_game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\score.cpp">
+      <Filter>소스 파일\black_jack_game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\card.h">
-      <Filter>소스 파일\black_jack_game</Filter>
+      <Filter>헤더 파일\black_jack_game</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\card_shape.h">
+      <Filter>헤더 파일\black_jack_game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\compare.h">
+      <Filter>헤더 파일\black_jack_game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\mini_game.h">
+      <Filter>헤더 파일\black_jack_game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\score.h">
       <Filter>헤더 파일\black_jack_game</Filter>
     </ClInclude>
   </ItemGroup>
