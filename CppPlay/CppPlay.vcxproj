@@ -19,19 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\black_jack_compare.cpp" />
-    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\card.cpp" />
-    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\card_shape.cpp" />
-    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\game_main.cpp" />
-    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\mini_game.cpp" />
-    <ClCompile Include="..\src\Cpp_play\Black_jack_game_pj\score.cpp" />
+    <ClCompile Include="..\src\Cpp_play\black_jack_compare.cpp" />
+    <ClCompile Include="..\src\Cpp_play\card.cpp" />
+    <ClCompile Include="..\src\Cpp_play\card_shape.cpp" />
+    <ClCompile Include="..\src\Cpp_play\game_main.cpp" />
+    <ClCompile Include="..\src\Cpp_play\mini_game.cpp" />
+    <ClCompile Include="..\src\Cpp_play\score.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\card.h" />
-    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\card_shape.h" />
-    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\compare.h" />
-    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\mini_game.h" />
-    <ClInclude Include="..\src\Cpp_play\Black_jack_game_pj\score.h" />
+    <ClInclude Include="..\src\Cpp_play\card.h" />
+    <ClInclude Include="..\src\Cpp_play\card_shape.h" />
+    <ClInclude Include="..\src\Cpp_play\compare.h" />
+    <ClInclude Include="..\src\Cpp_play\mini_game.h" />
+    <ClInclude Include="..\src\Cpp_play\score.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
