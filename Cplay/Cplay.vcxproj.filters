@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\game_4">
-      <UniqueIdentifier>{872313fb-7168-43aa-ba4e-1b871cf65270}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\DungeonRPG">
       <UniqueIdentifier>{9d71cbd8-59bd-42a9-877b-d82716676e8a}</UniqueIdentifier>
     </Filter>
@@ -28,6 +25,9 @@
     <Filter Include="헤더 파일\DungeonRPG">
       <UniqueIdentifier>{43086750-8496-45f0-9b39-bc57cea18cd4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\concave">
+      <UniqueIdentifier>{872313fb-7168-43aa-ba4e-1b871cf65270}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\C_play\game\DungeonRPG\DungeonRPG.c">
@@ -35,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="..\src\C_play\game\game_1\game_2.c">
       <Filter>소스 파일\game_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\C_play\game\concave\concave.c">
+      <Filter>소스 파일\concave</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

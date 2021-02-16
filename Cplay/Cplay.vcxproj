@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\C_play\game\concave\concave.c" />
     <ClCompile Include="..\src\C_play\game\DungeonRPG\DungeonRPG.c" />
     <ClCompile Include="..\src\C_play\game\game_1\game_2.c" />
   </ItemGroup>
