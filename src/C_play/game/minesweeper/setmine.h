@@ -1,0 +1,1 @@
+void setMine(int mineMax);

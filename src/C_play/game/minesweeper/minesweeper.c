@@ -8,13 +8,14 @@
 typedef struct {
 	char Main_menu;
 	void(*fptr)();
+	void(*fptr2)();
 }MainMenuFunc;
 
 MainMenuFunc funcMainMap[] = {
-	{'1', setEasyMap},
-	{'2', setNormalMap},
-	{'3', setHardMap},
-	{'4', setCustomMap},
+	{'1', setEasyMap,setEasyMap},
+	{'2', setNormalMap,setNormalMap},
+	{'3', setHardMap,setHardMap},
+	{'4', setCustomMap,setCustomMap},
 
 };
 
