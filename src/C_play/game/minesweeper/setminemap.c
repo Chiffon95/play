@@ -31,7 +31,7 @@ void setEasyMap() {
 	setLoadingMap();
 	char easyMap[EASYYAXIS][EASYXAXIS] = { 0 };
 	printf("Easy Mode\n");
-	setMine(easyMap, EASYMINENUM);
+	setMine(easyMap, EASYYAXIS, EASYXAXIS, EASYMINENUM);
 }
 void setNormalMap() {
 	setLoadingMap();

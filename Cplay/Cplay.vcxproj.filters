@@ -51,6 +51,9 @@
     <ClCompile Include="..\src\C_play\game\minesweeper\setmine.c">
       <Filter>소스 파일\minesweeper</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\C_play\game\minesweeper\minemap.c">
+      <Filter>소스 파일\minesweeper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\C_play\game\game_1\game_2.h">
@@ -63,6 +66,9 @@
       <Filter>소스 파일\minesweeper</Filter>
     </ClInclude>
     <ClInclude Include="..\src\C_play\game\minesweeper\setmine.h">
+      <Filter>소스 파일\minesweeper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\C_play\game\minesweeper\minemap.h">
       <Filter>소스 파일\minesweeper</Filter>
     </ClInclude>
   </ItemGroup>
