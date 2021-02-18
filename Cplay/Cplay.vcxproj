@@ -142,15 +142,17 @@
     <ClCompile Include="..\src\C_play\game\concave\concave.c" />
     <ClCompile Include="..\src\C_play\game\DungeonRPG\DungeonRPG.c" />
     <ClCompile Include="..\src\C_play\game\game_1\game_2.c" />
-    <ClCompile Include="..\src\C_play\game\minesweeper\minemap.c" />
+    <ClCompile Include="..\src\C_play\game\minesweeper\inGame.c" />
     <ClCompile Include="..\src\C_play\game\minesweeper\minesweeper.c" />
+    <ClCompile Include="..\src\C_play\game\minesweeper\processGame.c" />
     <ClCompile Include="..\src\C_play\game\minesweeper\setmine.c" />
     <ClCompile Include="..\src\C_play\game\minesweeper\setminemap.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\C_play\game\DungeonRPG\DungeonRPG.h" />
     <ClInclude Include="..\src\C_play\game\game_1\game_2.h" />
-    <ClInclude Include="..\src\C_play\game\minesweeper\minemap.h" />
+    <ClInclude Include="..\src\C_play\game\minesweeper\inGame.h" />
+    <ClInclude Include="..\src\C_play\game\minesweeper\processGame.h" />
     <ClInclude Include="..\src\C_play\game\minesweeper\setmine.h" />
     <ClInclude Include="..\src\C_play\game\minesweeper\setminemap.h" />
   </ItemGroup>

@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\minesweeper">
       <UniqueIdentifier>{0492db73-740a-43f3-954e-fe0bf69c567b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\minesweeper">
+      <UniqueIdentifier>{d52df78a-8e24-46ca-862b-93e834ff1b14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\C_play\game\DungeonRPG\DungeonRPG.c">
@@ -51,7 +54,10 @@
     <ClCompile Include="..\src\C_play\game\minesweeper\setmine.c">
       <Filter>소스 파일\minesweeper</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\C_play\game\minesweeper\minemap.c">
+    <ClCompile Include="..\src\C_play\game\minesweeper\inGame.c">
+      <Filter>소스 파일\minesweeper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\C_play\game\minesweeper\processGame.c">
       <Filter>소스 파일\minesweeper</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,14 +68,17 @@
     <ClInclude Include="..\src\C_play\game\DungeonRPG\DungeonRPG.h">
       <Filter>헤더 파일\DungeonRPG</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\C_play\game\minesweeper\setminemap.h">
-      <Filter>소스 파일\minesweeper</Filter>
+    <ClInclude Include="..\src\C_play\game\minesweeper\inGame.h">
+      <Filter>헤더 파일\minesweeper</Filter>
     </ClInclude>
     <ClInclude Include="..\src\C_play\game\minesweeper\setmine.h">
-      <Filter>소스 파일\minesweeper</Filter>
+      <Filter>헤더 파일\minesweeper</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\C_play\game\minesweeper\minemap.h">
-      <Filter>소스 파일\minesweeper</Filter>
+    <ClInclude Include="..\src\C_play\game\minesweeper\setminemap.h">
+      <Filter>헤더 파일\minesweeper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\C_play\game\minesweeper\processGame.h">
+      <Filter>헤더 파일\minesweeper</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

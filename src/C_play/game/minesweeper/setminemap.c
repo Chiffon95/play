@@ -2,16 +2,8 @@
 #include <string.h>
 #include <Windows.h>
 #include "setmine.h"
-
-#define EASYXAXIS 20
-#define EASYYAXIS 20
-#define EASYMINENUM 100
-#define NOLMALXAXIS 30
-#define NOLMALXAXIS 30
-#define NOLMALMINENUM 400
-#define HARDXAXIS 60
-#define HARDXAXIS 60
-#define HARDMINENUM 3000
+#include "setminemap.h"
+#include "inGame.h"
 
 void setLoadingMap() {
 	system("cls");
@@ -19,7 +11,7 @@ void setLoadingMap() {
 	char const loading[] = "Loading..... Making Map.......!!!";
 	for (int i = 0; i < strlen(loading);i++) {
 		printf("%c", loading[i]);
-		Sleep(200);
+		Sleep(100);
 	}
 	system("cls");
 	printf("Done!");
@@ -29,30 +21,47 @@ void setLoadingMap() {
 
 void setEasyMap() {
 	setLoadingMap();
-	char easyMap[EASYYAXIS][EASYXAXIS] = { 0 };
 	printf("Easy Mode\n");
-	setMine(easyMap, EASYYAXIS, EASYXAXIS, EASYMINENUM);
+	setMine(EASYAXIS, EASYAXIS, EASYMINENUM);
+	inGame(EASYAXIS, EASYAXIS, EASYMINENUM);
 }
 void setNormalMap() {
 	setLoadingMap();
-	char normalMap[NOLMALXAXIS][NOLMALXAXIS] = { 0 };
 	printf("Normal Mode\n");
-	setMine(normalMap, NOLMALMINENUM);
+	setMine(NOLMALAXIS, NOLMALAXIS,NOLMALMINENUM);
+	inGame(NOLMALAXIS, NOLMALAXIS, NOLMALMINENUM);
 }
 void setHardMap() {
 	setLoadingMap();
-	char hardMap[HARDXAXIS][HARDXAXIS] = { 0 };
 	printf("Hard Mode\n");
-	setMine(hardMap, HARDMINENUM);
+	setMine(HARDAXIS, HARDAXIS,HARDMINENUM);
+	inGame(NOLMALAXIS, NOLMALAXIS, NOLMALMINENUM);
 }
 void setCustomMap() {
-	int xAxis, yAxis;
-	printf("Minesweeper map size (Max size : 200 X 200, Min size : 10 X 10 // '-1' -> Back\n");
-	printf("Enter X axis : ");
-	scanf("%d", &xAxis);
-	printf("Enter X axis : ");
-	scanf("%d", &yAxis);
+	int xAxis, yAxis, mineNum;
+	printf("Minesweeper map size (Max size : 40 X 40, Min size : 10 X 10, Mine number : 10 ~ 1000 // '-1' -> Back\n");
+	do {
+		printf("Enter X axis : ");
+		scanf("%d", &xAxis);
+		if (xAxis >= 10 && xAxis <= 40) {
+			printf("Enter Y axis : ");
+			scanf("%d", &yAxis);
+			if (yAxis >= 10 && yAxis <= 40) {
+				printf("Enter mine number : ");
+				scanf("%d", &mineNum);
+				if (mineNum >= 10 && mineNum <= (xAxis * yAxis)) {
+					break;
+				}
+				else
+					printf("Warning!!! Wrong Mine number!!! Try again!\n");
+			}
+			else
+				printf("Warning!!! Wrong Y axis!!! Try again!\n");
+		}
+		else
+			printf("Warning!!! Wrong X axis!!! Try again!\n");
+	} while (1);
 	setLoadingMap();
-	char easyMap[HARDXAXIS][HARDXAXIS];
+	setMine(xAxis, yAxis, mineNum);
 	printf("Custom Mode\n");
 }
